@@ -1,0 +1,5 @@
+{
+  "suggest.noselect": true,
+  "coc.source.OmniSharp.enable" : true,
+  "diagnostic.displayByAle": true
+}
