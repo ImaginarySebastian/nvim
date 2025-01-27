@@ -54,8 +54,9 @@ keymap.set({ 'n', 'v' }, '<leader>t', require('nvim-toggler').toggle)
 keymap.set("n", "<c-f>", require('fzf-lua').files, { desc = "Fzf Files" })
 
 
--- OmniSharp --
-
+-- dotnet --
+-- dotnet new <TEMPLATE> [-n | --name <OUTPUT_NAME>]
+-- <TEMPLATE> = console | classlib | web | webapp | sln |
 keymap.set("n", "<F2>", ":FloatermNew --autoclose=0 dotnet run<cr>", { silent = true, noremap = true})
 keymap.set("n", "<leader>dt", ":FloatermNew --autoclose=0 dotnet test<cr>", { silent = true, noremap = true})
 keymap.set("n", "<leader>db", ":FloatermNew --autoclose=0 dotnet build<cr>", { silent = true, noremap = true})
